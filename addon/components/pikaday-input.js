@@ -6,7 +6,7 @@ var moment = window.moment;
 
 export default Ember.Component.extend({
   tagName: 'input',
-  attributeBindings: ['readonly'],
+  attributeBindings: ['readonly', 'disabled', 'placeholder'],
 
   setupPikaday: function() {
     var that = this;
