@@ -27,7 +27,7 @@ export default Ember.Component.extend({
     }
 
     var pikaday = new Pikaday(options);
-
+    this.$().attr('placeholder', this.get('placeholder'));
     this.set('pikaday', pikaday);
     this.get('pikaday').setDate(this.get('value'), true);
   }.on('didInsertElement'),
